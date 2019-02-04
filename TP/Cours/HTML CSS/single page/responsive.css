@@ -1,0 +1,167 @@
+body, header, section, footer, article {
+	width: 100%;
+	margin: 0 auto;
+}
+section {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 100px;
+}
+
+section p {
+	width: 30%;
+	padding: 15px 5px;
+	height: 100px;
+	border: 1px solid black;
+}
+
+section p:nth-child(1) {
+	background: orange;
+}
+
+section p:nth-child(2) {
+	background: blue;
+}
+
+section p:nth-child(3) {
+	background: green;
+}
+
+footer {
+	background: lightgrey;
+	height: 649px;
+	border-top: 2px solid black;
+	text-align: center;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+}
+
+header img {
+	align-self: center;
+	width: 60%;
+	border-radius: 10px;
+}
+
+.image2, .image3 {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+	section {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	section p {
+		width: 90%;
+	}
+
+	footer {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 680px) {
+	
+	header h1 {
+		color: red;
+	}
+
+	header img {
+		width: 95%;
+		border-radius: 0;
+	}
+
+	.image2 {
+		display: inherit;
+	}
+
+	.image1, .image3 {
+		display: none;
+	}
+
+	section p {
+		background-color: purple !important;
+	}
+
+}
+
+@media screen and (min-width: 680px) and (max-width: 920px) {
+
+	header img {
+		width: 80%;
+		border-radius: 50%;
+	}
+
+	.image3 {
+		display: inherit;
+	}
+
+	.image1, .image2 {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 920px) {
+	
+	header h1 {
+		text-align: center;
+	}
+
+}
+
+/*sapin*/
+
+article {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+article p {
+	margin: -10px;
+	z-index: 100;
+}
+
+article p:nth-child(1) {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 85.5px 100px 85.5px;
+	border-color: transparent transparent #026631 transparent;
+}
+article p:nth-child(2) {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 115px 120px 115px;
+	border-color: transparent transparent #026631 transparent;
+}
+article p:nth-child(3) {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 130px 140px 130px;
+	border-color: transparent transparent #026631 transparent;
+}
+ article div {
+ 	background: brown;
+ 	width: 40px;
+ 	height: 40px;
+ }
+
+ article span {
+ 	background: red;
+ 	margin-top: 20px;
+ 	border-radius: 50%;
+ 	width: 10px;
+ 	height: 10px;
+ 	z-index: 200;
+ }

@@ -1,0 +1,71 @@
+body {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+header, nav, article, footer, p {
+	border: 5px solid black;
+
+}
+
+header, section, footer {
+	margin: 10px 0;
+}
+
+header {
+	height: 60px;
+}
+
+section {
+	display: flex;
+}
+
+nav {
+	width: 10%;
+	height: 400px;
+}
+
+.contenu {
+	width: 90%;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: 10px;
+}
+
+article {
+	display: flex;
+	justify-content: space-between;
+ 	height: 100px;
+}
+
+p {
+	margin: 5px;
+}
+
+article p:nth-child(1) {
+	width: 150px;	
+}
+
+article p:nth-child(2) {
+	width: 100px;
+	margin-right: 40px;
+}
+
+article p:nth-child(3) {
+	width: 90px;
+}
+
+footer {
+	display: flex;
+	height: 60px;
+}
+
+footer p:nth-child(1) {
+	width: 90%;
+}
+
+footer p:nth-child(2) {
+	width: 10%;
+}

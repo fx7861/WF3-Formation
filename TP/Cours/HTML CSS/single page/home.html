@@ -1,0 +1,98 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WF3-TP</title>
+	<style>
+		#title {
+			display: block;
+			color: blue;
+			font-weight: bold;
+			text-decoration: underline;
+			font-size: 2em;
+		}
+
+		.paragraphe {
+			display: block;
+		}
+		
+		.container {
+			text-align: center;
+		}
+
+		.right {
+			text-align: right;
+		}
+
+		div span {
+			font-style: italic;
+		}
+
+		.navigation ul {
+			display: flex;
+			justify-content: flex-end;
+			list-style-type: none;
+			text-align: right;
+		}
+
+		.navigation ul li {
+			padding: 5px 10px;
+			margin-right: 20px;
+			border-radius: 10px;
+		}
+
+		.navigation li:nth-child(odd) {
+			background: linear-gradient(to top, #7c9eb2, #87a8bb, #92b2c5, #9ebdce, #a9c7d8);
+			border: 1px solid lightblue;
+		}
+
+		.navigation li:nth-child(odd):active {
+			background: linear-gradient(to bottom, #7c9eb2, #87a8bb, #92b2c5, #9ebdce, #a9c7d8);
+			border: 1px solid lightblue;
+		}
+
+		.navigation li:nth-child(even) {
+			background: linear-gradient(to top, #d2ab99, #d8b2a1, #debaa9, #e5c1b1, #ebc9b9);
+			border: 1px solid #DEB887;
+		}
+
+		.navigation li:nth-child(even):active {
+			background: linear-gradient(to bottom, #d2ab99, #d8b2a1, #debaa9, #e5c1b1, #ebc9b9);
+			border: 1px solid #DEB887;
+		}
+		.test {
+			border: 2px double black;
+			border-radius: 10px;
+			box-shadow:3px 3px 5px grey;
+			text-align: center;
+			background: green;
+		}
+		.test:active {
+			background: red;
+		}
+		a {
+			text-decoration: none;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="navigation">
+		<ul>
+			<li><a href="#">Accueil</a></li>
+			<li><a href="#">Catégorie</a></li>
+			<li><a href="#">Boutique</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>
+	<div class="container">
+		<span id="title">Salut!</span>
+		<span class="paragraphe">Super site</span>
+		<span class="paragraphe right">créer le 29/10/2018</span>
+		<p>paragraphe</p>
+	</div>
+	<div class="test">
+		<p>Test</p>
+		<span>Test</span>
+	</div>
+</body>
+</html>

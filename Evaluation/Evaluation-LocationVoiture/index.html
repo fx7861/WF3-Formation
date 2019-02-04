@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name='language' content='FR'>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="canonical" href="https://www.vtc.com" />
+	<meta name='url' content='https://www.vtc.com'>
+	<title>VTC</title>
+	<meta name='description' content='150 caractères'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<h1 class="text-center">Bienvenue à bord</h1>
+			<p class="text-center">Location de voiture 24h/24 et 7j/7</p>
+			<form class="form-seach">
+				<div class="div-form">
+					<select id="adresse">
+					    <option value="">Adresse de départ</option>
+					    <option value="paris">Paris</option>
+					    <option value="lyon">Lyon</option>
+					    <option value="bordeaux">Bordeaux</option>
+					    <option value="marseille">Marseille</option>
+					</select>
+					<input type="date" name="date-depart" class="input-date" >
+					<input type="date" name="date-fin" class="input-date">
+				</div>
+				<button  type="submit" class="btn-seach">Valider ma recherche</button>
+			</form>
+			<button class="btn-menu">
+				<i class="fa fa-bars"></i>
+			</button>
+
+			<nav class="menu" id="menu">
+				<a href="#">Louer une voiture</a>
+				<a href="#">Louer un utilitaire</a>
+				<a href="#">Réserver un chauffeur</a>
+				<a href="#">Découvrez nos agences</a>
+				<a href="#">Mon compte</a>
+				<a href="#">Contact</a>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<div class="row result">
+				<div class="col-6">
+					<p>4 résultats</p>
+				</div>
+				<div class="col-6">
+					<select id="filtre">
+					    <option value="croissant">Prix croissant</option>
+					    <option value="decroissant">Prix décroissant</option>
+					</select>
+				</div>
+			</div>
+			<section>
+				<div class="row layout-vehicule">
+					<div class="col-5">
+						<div class="owl-carousel owl-theme">
+						    <div class="item"><img src="images/vehicule1.png"></div>
+						    <div class="item"><img src="images/vehicule1.png"></div>
+						    <div class="item"><img src="images/vehicule1.png"></div>
+						    <div class="item"><img src="images/vehicule1.png"></div>
+						</div>
+					</div>
+					<div class="col-7">
+						<div class="info">
+							<h2>Peugeot 208</h2>
+							<p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0,5/km supplémentaire)</p>
+							<p>999€ - Agence de Paris</p>
+						</div>
+						
+						<button class="btn-reserve">Réserver et Payer</button>
+					</div>
+				</div>
+				<div class="row layout-vehicule">
+					<div class="col-5">
+						<div class="owl-carousel owl-theme">
+						    <div class="item"><img src="images/vehicule2.png"></div>
+						    <div class="item"><img src="images/vehicule2.png"></div>
+						    <div class="item"><img src="images/vehicule2.png"></div>
+						    <div class="item"><img src="images/vehicule2.png"></div>
+						</div>
+					</div>
+					<div class="col-7">
+						<div class="info">
+							<h2>Ford Focus</h2>
+							<p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0,5/km supplémentaire)</p>
+							<p>999€</p>
+						</div>
+						<button class="btn-reserve">Réserver et Payer</button>
+					</div>
+				</div>
+				<div class="row layout-vehicule">
+					<div class="col-5">
+						<div class="owl-carousel owl-theme">
+						    <div class="item"><img src="images/vehicule3.png"></div>
+						    <div class="item"><img src="images/vehicule3.png"></div>
+						    <div class="item"><img src="images/vehicule3.png"></div>
+						    <div class="item"><img src="images/vehicule3.png"></div>
+						</div>
+					</div>
+					<div class="col-7">
+						<div class="info">
+							<h2>Audi A1</h2>
+							<p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0,55/km supplémentaire)</p>
+							<p>1100€ - Agence de Paris</p>
+						</div>
+						<button class="btn-reserve">Réserver et Payer</button>
+					</div>
+				</div>
+				<div class="row layout-vehicule">
+					<div class="col-5">
+						<div class="owl-carousel owl-theme">
+						    <div class="item"><img src="images/vehicule4.png"></div>
+						    <div class="item"><img src="images/vehicule4.png"></div>
+						    <div class="item"><img src="images/vehicule4.png"></div>
+						    <div class="item"><img src="images/vehicule4.png"></div>
+						</div>
+					</div>
+					<div class="col-7">
+						<div class="info">
+							<h2>Opel Mokka</h2>
+							<p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0,4/km supplémentaire)</p>
+							<p>1150€ - Agence de Paris</p>
+						</div>
+						<button class="btn-reserve">Réserver et Payer</button>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+	<footer>
+		<img src="images/agence.jpg">
+		<p>
+			Notre Agence de <strong>Paris</strong><br>
+			300 boulevard de vaugirard, 75015, Paris<br>
+			Ouvert 7j/7 de 09h à 13h et de 14h à 20h<br>
+			01 49 78 21 33<br>
+			contact@vtc.com
+		</p>
+
+	</footer>
+</body>
+</html>

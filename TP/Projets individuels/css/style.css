@@ -1,0 +1,163 @@
+body {
+	width: 100%;
+	margin: 0 auto;
+}
+
+section {
+	margin: 30px;
+}
+
+.mini-hr {
+	background: #4D5061;
+	width: 5%;
+	margin-left: 0;
+}
+
+/******** Modif Class Bootstrap ********/
+
+.list-group-item {
+	background: none;
+}
+
+/********* Header **********/
+
+.header-principal {
+	background: #30323D;
+	margin-bottom: 30px;
+	padding: 10px 0;
+}
+
+.header-principal p {
+	color: white;
+	margin: 0;
+}
+
+.header-principal span {
+	color: white;
+	font-size: 1.5em;
+}
+
+.header-nav li i {
+	font-size: 0.8em;
+}
+
+.header-nav li {
+	margin-right: 20px;
+	color: white;
+}
+
+.header-nav ul li:last-child {
+	margin-right: 0;
+}
+
+.header-nav button {
+	border: hidden;
+	padding: 0;
+}
+
+/********* Carousel **********/
+
+.section-carousel {
+	width: 60%;
+	border: 1px solid grey;
+	padding: 5px;
+	border-radius: 8px;
+}
+
+.section-carousel p {
+	margin: 0;
+	height: 300px;
+}
+
+.section-carousel p img {
+	height: 100%;
+}
+
+/******* Content ********/
+
+.meta-user p {
+	color: #4D5061;
+	font-size: 0.8em;
+	margin-right: 10px;
+}
+
+.section-content article p {
+	font-size: 0.9em;
+}
+
+.section-content article h3 {
+	font-size: 1em;
+	color: #4D5061;
+}
+
+.list-content {
+	list-style-type: none;
+	padding: 0;
+}
+
+.list-content li {
+	padding: 8px;
+	border-bottom: 1px solid #D0CFCF;
+}
+
+.list-content li:first-child {
+	border-top: 1px solid #D0CFCF;
+}
+
+/******** footer ******/
+
+footer {
+	background: black;
+	color: white;
+	padding: 25px 0;
+}
+
+footer article p:first-child {
+	font-size: 1.2em;
+}
+
+footer article p:last-child {
+	color: lightgrey;
+	font-size: 0.9em;
+}
+
+
+
+/******* reponsive ******/
+
+@media screen and (min-width: 1200px) {
+	.section-carousel {
+		width: 40%;
+		border: 1px solid grey;
+		padding: 5px;
+		border-radius: 8px;
+	}
+
+	.section-carousel p {
+		height: 400px;
+	}
+
+}
+
+@media screen and (max-width: 576px) {
+	.section-carousel {
+		width: 70%;
+		border: 1px solid grey;
+		padding: 5px;
+		border-radius: 8px;
+	}
+
+	.section-carousel p {
+		height: 180px;
+	}
+
+	footer div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	footer p { 
+		text-align: center;
+	}
+}

@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html>
+<head>
+<link rel="stylesheet" href="owl/owl.carousel.min.css">
+<link rel="stylesheet" href="owl/owl.theme.default.min.css">
+<meta type="content" charset="utf-8" />
+<title>Exercice 4</title>
+<style>
+  body { font-family:'Helvetica Neue'; font-weight:lighter; }
+  section { padding:10em 5em; text-align:center; }
+  #logo { position:absolute; top:0; width:100%; text-align:center; color:white; }
+  #logo span { background:black; display:inline-block; padding:1em; border-radius:0 0 5px 5px; }
+  #patterns div { display:inline-block; margin:0 1em 1em 0; border-radius:5px; box-shadow:0 2px 2px rgba(0,0,0,0.1); height:150px; width:150px; cursor:pointer; border:solid 2px white; }
+  .patterns2 div { border-radius:5px; box-shadow:0 2px 2px rgba(0,0,0,0.1); height:150px; cursor:pointer; border:solid 2px white; }
+  .bloc1 { background-image:url(http://subtlepatterns.com/patterns/tex2res5.png); }
+  .bloc2 { background-image:url(http://subtlepatterns.com/patterns/tex2res4.png); }
+  .bloc3 { background-image:url(http://subtlepatterns.com/patterns/tex2res3.png); }
+  .bloc4 { background-image:url(http://subtlepatterns.com/patterns/tex2res2.png); }
+  .bloc5 { background-image:url(http://subtlepatterns.com/patterns/tex2res1.png); }
+  .bloc6 { background-image:url(http://subtlepatterns.com/patterns/arches.png); }
+  #logo span {}
+</style>
+</head>
+<body>
+  <a href="#" id="logo"><span>Mon Logo</span></a>
+  <section id="patterns">
+  <div class="bloc1"></div>
+  <div class="bloc2"></div>
+  <div class="bloc3"></div>
+  <div class="bloc4"></div>
+  <div class="bloc5"></div>
+  <div class="bloc6"></div>
+  </section>
+  <div class="owl-carousel owl-theme patterns2">
+    <div class="bloc1 item"></div>
+    <div class="bloc2 item"></div>
+    <div class="bloc3 item"></div>
+    <div class="bloc4 item"></div>
+    <div class="bloc5 item"></div>
+    <div class="bloc6 item"></div>
+  </div>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="owl/owl.carousel.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#logo span").hover(function(){
+    $(this).animate({paddingTop: "3em"}, 1000)
+  }, function(){
+    $(this).animate({paddingTop: "1em"}, 1000)
+  })
+
+  $("#patterns").children("div").each(function(){
+  	$(this).click(function(){
+      $("body").attr("class" , "")
+      var classAttr = $(this).attr('class')
+      $("body").addClass(classAttr)
+  	})
+
+  	$(this).hover(function(){
+  		$(this).animate({opacity: .5, width: "+=50", height: "+=50"}, 500)
+  	}, function(){
+  		$(this).animate({opacity: 1, width: "150", height: "150"}, 500)
+  	})
+  })
+});
+
+$(document).ready(function(){
+ $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:5,
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+})
+</script>
+
+
+</body>
+</html>

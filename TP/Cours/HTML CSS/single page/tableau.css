@@ -1,0 +1,60 @@
+body {
+	margin: 0 auto;
+}
+
+.table {
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+.title {
+	text-align: center;
+	font-weight: normal;
+}
+
+.table th, .table td {
+	border: 1px solid #595358;
+	padding: 3px 10px;
+}
+
+.table th {
+ background: #9882AC;
+ color: white;
+ text-shadow: 2px 2px 5px #000000;
+}
+
+.table .vide {
+	border: none;
+}
+
+
+.table2 {
+	width: 100%;
+	margin-top: 50px;
+}
+
+.table2 td {
+	border: 1px solid black;
+	width: 50%;
+}
+
+.table2 img {
+	width: 100%;
+}
+
+h4 {
+	text-align: center;
+}
+
+.div {
+	display: flex;
+}
+
+.div p {
+	width: 50%;
+	border: 1px solid black;
+}
+
+.div img {
+	width: 100%;
+}

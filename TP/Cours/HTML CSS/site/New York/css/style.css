@@ -1,0 +1,17 @@
+header {
+	border-bottom: 2px solid black;
+	margin-bottom: 50px;
+}
+
+section {
+	margin-bottom: 50px;
+}
+
+.gallery {
+	border: 1px solid lightgrey;
+}
+
+.gallery img {
+	width: 100%;
+	height: 200px;
+}

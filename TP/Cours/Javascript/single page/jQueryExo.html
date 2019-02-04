@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="jQueryExo.js"></script>
+	<title>JQuery</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		  /*
+		 * Styles CSS par défaut
+		 */
+		 
+		body { background-color: #ececec; padding-bottom: 20px; } mark { background-color: rgba(232, 207, 84, .5); border-radius: 2px; padding: 1px 2px; } kbd { border: 1px solid #ccc; padding: 0 3px; } input { width: 100%; margin-bottom: 8px; }
+		body > header { background-color: #77386a; border-radius: 5px; color: white; padding: 10px; }
+		body > header h1 { font-size: 1.75rem; }
+		body > header h2 { font-size: 1.25rem; }
+		body > header h1, body > header h2 { font-weight: 100;  margin: 0; }
+		body > header { margin: 20px 20px 0 20px; }
+		body > section { margin: 0 20px; max-width: 800px; padding: 20px 0; }
+		body > section + section { border-top: 2px dashed #77386a; max-width: 770px; }
+		section > header h1 { background-color: #77386a; border-radius: 5px; color: white; font-size: 2rem; line-height: 50px; margin: 0 20px 0 0; min-height: 50px; min-width: 50px; padding: 10px; text-align: center; }
+		section > header section { background-color: white; border-radius: 5px; max-width: 400px; min-height: 50px; min-width: 300px; padding: 10px; position: relative; }
+		section > header section:after { border-bottom: 12px solid transparent; border-right: 15px solid white; border-top: 12px solid transparent; content: ""; display: block; left: 0; position: absolute;  top: 35px; transform: translate(-100%, -50%); }
+		section > header h1, section > header section { float: left; }
+		section > header section p { margin: 0; }
+		section > header section p + p { margin-top: 10px; }
+		article { clear: both; background-color: white; border-radius: 5px; margin: 20px 0 0 0; max-width: 750px; min-height: 50px; min-width: 300px; padding: 20px; position: relative; }
+		.clearfix:after { content: ""; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+		.clearfix { display: inline-block; }
+		html[xmlns] .clearfix { display: block; }
+		* html .clearfix { height: 1%; }
+		 
+		article > div { background: #eee; border: solid 1px #e6e6e6; display: block; float: left; font-size: 16px; font-weight: 300; height: 75px; line-height: 75px; text-align: center; min-width: 75px; }
+		article > div + div { margin-left: 8px; }
+		 
+		article > div:first-child {
+			cursor: pointer;
+		}
+
+		.highlight {
+		  background-color: #e8cf54;
+		  color: #fff;
+		}
+
+		.rectangle {
+			margin: 10px;
+			width: 30px;
+			height: 10px;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+	  <h1>exercices jQuery : événements</h1>
+	  <h2>concepts fondamentaux et avancés en jQuery</h2>
+	</header>
+
+	<!-- ------------------------------------------------ -->
+	 
+	<section id="exercice0">
+	  <header class="clearfix">
+	    <h1>0</h1>
+	    <section>
+	      <p>Créer 5 bouton et un rectangle</p>
+	    </section>
+	  </header>
+	  <article class="clearfix">
+	  <!-- debut de la cible -->
+	 
+	    <div class="rectangle"></div>
+	    <button class="B1">B1</button>
+	    <button class="B2">B2</button>
+	    <button class="B3">B3</button>
+	    <button class="B4">B4</button>
+	    <button class="B5">B5</button>
+
+	 
+	  <!-- fin de la cible -->
+	  </article>
+	</section>
+	 
+	<!-- ------------------------------------------------ -->
+	 
+	<!-- ------------------------------------------------ -->
+	 
+	<section id="exercice1">
+	  <header class="clearfix">
+	    <h1>1</h1>
+	    <section>
+	      <p>Au déclenchement de l'événement <mark>clic</mark> sur la boîte, <mark>cacher la boîte</mark>.</p>
+	    </section>
+	  </header>
+	  <article class="clearfix">
+	  <!-- debut de la cible -->
+	 
+	    <div>boîte</div>
+	 
+	  <!-- fin de la cible -->
+	  </article>
+	</section>
+	 
+	<!-- ------------------------------------------------ -->
+	 
+	<section id="exercice2">
+	  <header class="clearfix">
+	    <h1>2</h1>
+	    <section>
+	      <p>Au déclenchement de l'événement <mark>clic</mark> sur la boîte 0, <mark>cacher ou afficher la boîte 1</mark> (utiliser le ciblage par classe).</p>
+	    </section>
+	  </header>
+	  <article class="clearfix">
+	  <!-- debut de la cible -->
+	 
+	    <div class="clic">boîte 0</div>
+	    <div class="cible">boîte 1</div>
+	 
+	  <!-- fin de la cible -->
+	  </article>
+	</section>
+	 
+	<!-- ------------------------------------------------ -->
+	 
+	<section id="exercice3">
+	  <header class="clearfix">
+	    <h1>3</h1>
+	    <section>
+	      <p>Au déclenchement de l'événement <mark>double-clic</mark> sur la boîte 0, <mark>alterner l'attribution de la class highlight</mark> à la boîte 1 (attribuer / supprimer successivement).</p>
+	    </section>
+	  </header>
+	  <article class="clearfix">
+	  <!-- debut de la cible -->
+	 
+	    <div>boîte 0</div>
+	    <div>boîte 1</div>
+	 
+	  <!-- fin de la cible -->
+	  </article>
+	</section>
+	 
+	<!-- ------------------------------------------------ -->
+	 
+	<section id="exercice4">
+	  <header class="clearfix">
+	    <h1>4</h1>
+	    <section>
+	      <p>Au déclenchement de l'événement <mark>double-clic</mark> sur la boîte 0, <mark>alterner l'affichage</mark> de la boîte 1 (cacher / afficher successivement).</p>
+	    </section>
+	  </header>
+	  <article class="clearfix">
+	  <!-- debut de la cible -->
+	 
+	    <div>boîte 0</div>
+	    <div>boîte 1</div>
+	 
+	  <!-- fin de la cible -->
+	  </article>
+	</section>
+	 
+	<!-- ------------------------------------------------ -->
+	 
+	<section id="exercice5">
+	  <header class="clearfix">
+	    <h1>5</h1>
+	    <section>
+	      <p>Au déclenchement de l'événement <mark>survol</mark>, <mark>cacher la boîte avec un effet de fade out</mark>.</p>
+	    </section>
+	  </header>
+	  <article class="clearfix">
+	  <!-- debut de la cible -->
+	 
+	    <div>boîte</div>
+	 
+	  <!-- fin de la cible -->
+	  </article>
+	</section>
+	 
+	<!-- ------------------------------------------------ -->
+	 
+	<section id="exercice6">
+	  <header class="clearfix">
+	    <h1>6</h1>
+	    <section>
+	      <p>Au déclenchement de l'événement <mark>survol</mark>, <mark>diminuer l'opacité de la boîte de 50%</mark>. Rétablir l'opacité lors de la sortie de l'élément.</p>
+	    </section>
+	  </header>
+	  <article class="clearfix">
+	  <!-- debut de la cible -->
+	 
+	    <div>boîte</div>
+	 
+	  <!-- fin de la cible -->
+	  </article>
+	</section>
+	 
+	<!-- ------------------------------------------------ -->
+	 
+	<section id="exercice7">
+	  <header class="clearfix">
+	    <h1>7</h1>
+	    <section>
+	      <p>Au déclenchement de l'événement <mark>obtenir le focus</mark> sur le champ de formulaire, <mark>cacher la boîte</mark>.</p>
+	    </section>
+	  </header>
+	  <article class="clearfix">
+	  <!-- debut de la cible -->
+	 
+	    <form action="">
+	      <input type="text" placeholder="champ de formulaire">
+	    </form>
+	    <div>boîte</div>
+	 
+	  <!-- fin de la cible -->
+	  </article>
+	</section>
+	 
+	<!-- ------------------------------------------------ -->
+	 
+	<section id="exercice8">
+	  <header class="clearfix">
+	    <h1>8</h1>
+	    <section>
+	      <p>Au déclenchement de l'événement <mark>perdre le focus</mark> sur le champ de formulaire, <mark>cacher la boîte</mark>.</p>
+	    </section>
+	  </header>
+	  <article class="clearfix">
+	  <!-- debut de la cible -->
+	 
+	    <form action="">
+	      <input type="text" placeholder="champ de formulaire">
+	    </form>
+	    <div>boîte</div>
+	 
+	  <!-- fin de la cible -->
+	  </article>
+	</section>
+</body>
+</html>

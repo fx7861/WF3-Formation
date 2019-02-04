@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<title>Bootstrap</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+
+		.block {
+			background: grey;
+			border: 1px solid black;
+			border-radius: 10px;
+		}
+
+		.border-none {
+			border:none;
+		}
+
+		p,.padding {
+			padding-top: 10px;
+		}
+
+		span {
+			background: grey;
+			border: 1px solid black;
+			border-radius: 10px;
+			padding-top: 12px;
+			padding-bottom: 12px;
+		}
+
+		main {
+			margin-bottom: 50px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<main class="container-fluid">
+		<div class="row">
+			<div class="block border-none col-7">
+				<p class="text-center">7 colonnes</p>
+				<div class="row">
+					<div class="block padding col-3 text-center">3 colonnes</div>
+					<div class="block col-9">
+						<p class="text-center">9 colonnes</p>
+						<div class="row">
+							<span class="col-5 text-center ">3 colonnes</span>
+							<span class="offset-2 col-5 text-center ">7 colonnes</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class=" block border-none col-5">
+				<p class="text-center">5 colonnes</p>
+				<div class="row">
+					<span class="offset-4 col-5 text-center">5 colonnes</span>
+					<span class="col-3 text-center ">3 colonnes</span>
+					<span class="col-6 text-center">6 colonnes</span>
+					<span class="col-6 text-center">6 colonnes</span>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<main class="container-fluid">
+		<div class="row">
+			<span class="col-lg-4 col-md-6">left</span>
+			<span class="col-lg-8 col-md-6">right</span>
+		</div>
+	</main>
+
+</body>
+</html>

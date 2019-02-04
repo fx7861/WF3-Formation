@@ -1,0 +1,66 @@
+body {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+header, nav, article, section, footer {
+	border: 1px solid black;
+}
+
+header {
+}
+
+section {
+	display: flex;
+}
+
+footer {
+
+}
+
+section nav {
+	width: 15%;
+}
+
+section article {
+	width: 85%;
+	padding-left: 20px
+}
+
+nav > ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav > li  {
+	padding:0; 
+	margin:0 0 1px 0; 
+	height:40px; 
+	display:block;
+	background:url('image/verMenuImages.png') 0px -80px no-repeat; 
+	color:rgb(255,255,255);
+}
+
+/*
+nav li a {
+	padding:0px 25px;
+	font:16px Verdana, Arial, Helvetica, sans-serif; 
+	color:rgb(255,255,255); 
+	display:block; 
+	background:url('image/verMenuImages.png') 0px 0px no-repeat; 
+	text-decoration:none;
+	line-height:40px;
+}
+
+nav li a:hover {
+	background:url('image/verMenuImages.png') 0px -40px no-repeat; 
+	color:rgb(255,255,255);
+}
+
+nav li a.active, nav li a.active:hover{
+	background:url('image/verMenuImages.png') 0px -80px no-repeat; 
+	color:rgb(255,255,255);
+}
+*/
+
